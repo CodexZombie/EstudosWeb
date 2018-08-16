@@ -1,17 +1,23 @@
+.social-media .item:not(:last-child) {
+    margin-bottom: 26px;
+}
+
 .social-media .action {
     display: block;
     text-indent: -9999px;
     background-repeat: no-repeat;
 }
 
-.social-media .facebook {
+.social-media .-facebook {
     background-image: url(../../img/facebook.svg);
+    margin-bottom: 26px;
 }
 
-.social-media .twitter {
+.social-media .-twitter {
     background-image: url(../../img/twitter.svg);
+    margin-bottom: 26px;
 }
 
-.social-media .linkedin {
+.social-media .-linkedin {
     background-image: url(../../img/linkedin.svg);
 }
