@@ -1,8 +1,15 @@
+section {
+    position: relative;
+}
+
 .title-rotate {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-weight: 400;
     font-size: 18px;
-    text-transform: uppercase;
     color: #754ef9;
+    text-transform: uppercase;
     transform-origin: left bottom;
     transform: rotate(90deg);
 }
