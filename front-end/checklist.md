@@ -22,7 +22,7 @@ JavaScrip
             <li>Design Patterns/important JS features</li>
             <li>Frontend frameworks(optional)</li>
     </ul>
-<li>
+</li>
 </ul>
 
 <a href="https://github.com/danilosilvadev/howtomakeaportfolio/blob/master/README.md#CSS">Fonte - GitHub Danilo Silva 'How to make a portifolio'</a>
