@@ -1,0 +1,17 @@
+.social-media .action {
+    display: block;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+
+.social-media .facebook {
+    background-image: url(../../img/facebook.svg);
+}
+
+.social-media .twitter {
+    background-image: url(../../img/twitter.svg);
+}
+
+.social-media .linkedin {
+    background-image: url(../../img/linkedin.svg);
+}
