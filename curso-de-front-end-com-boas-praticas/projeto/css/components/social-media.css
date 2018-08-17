@@ -10,6 +10,8 @@
     display: block;
     text-indent: -9999px;
     background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
 }
 
 .social-media .-facebook {
