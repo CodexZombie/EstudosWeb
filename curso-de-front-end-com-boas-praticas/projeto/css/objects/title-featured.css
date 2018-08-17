@@ -1,9 +1,11 @@
 .title-featured {
-    font-size: 100PX;
+    font-size: 40PX;
     text-transform: uppercase;
+    margin-top: 185px;
     text-align: center;
 }
 
 .title-featured .featured {
+    font-size: 60px;
     color: #754ef9
 }
