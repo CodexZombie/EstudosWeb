@@ -7,15 +7,16 @@
 
     <title>Wilton Alves Portifólio</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet"> 
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
  
+    <link rel="stylesheet" href="css/objects/wrap-featured.css">
+    <link rel="stylesheet" href="css/objects/wrap-social.css">
     <link rel="stylesheet" href="css/objects/title-featured.css">
     <link rel="stylesheet" href="css/objects/subtitle-featured.css">
-    <link rel="stylesheet" href="css/objects/wrap-featured.css">
-
+    
     <link rel="stylesheet" href="css/components/main-btn.css">
     <link rel="stylesheet" href="css/components/main-header.css">
     <link rel="stylesheet" href="css/components/avatar-profile.css">
@@ -27,30 +28,31 @@
 </head>
 
 <body>
+    <header class="main-header">
+        <h1 class="logo">Wilton Alves</h1>
+
+        <nav class="main-menu">
+            <a class="item" href="#">Sobre</a>
+            <a class="item" href="#">Portifólio</a>
+            <a class="main-btn" href="#">Download CV</a>
+        </nav>
+    </header>
+
     <section class="wrap-featured">
-
-        <header class="main-header">
-            <h1 class="logo">Wilton Alves</h1>
-
-            <nav class="main-menu">
-                <a class="item" href="#">Sobre</a>
-                <a class="item" href="#">Portifólio</a>
-                <a class="main-btn" href="#">Download CV</a>
-            </nav>
-
-        </header>
-
         <figure class="avatar-profile">
             <img class="photo" src="img/barba.png" alt="Foto de rosto do Barba">
         </figure>
 
-        <h1 class="title-featured">Meus <strong class="featured">Trabalhos</strong></h1>
+        <h1 class="title-featured">
+            Meus <strong class="featured">Trabalhos</strong>
+        </h1>
         <h2 class="subtitle-featured">Desenvolvedor Front-End/UX</h2>
 
         <a href="#" class="play-video">Começar o Vídeo</a>
         
-        <aside>
-            <h1 class="title-rotate">Follow me on</h1>
+        <aside class="wrap-social">
+            <h1 class="title-rotate">Follow me on:</h1>
+            
             <ul class="social-media">
                 <li class="item"><a class="action -facebook" href="" target="_blank">Facebook</a></li>
                 <li class="item"><a class="action -twitter" href="" target="_blank">Twitter</a></li>
