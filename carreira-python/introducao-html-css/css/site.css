@@ -7,7 +7,7 @@ h1, h2 {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h1 {
+main h1 {
     text-align: center;
     color: #FFF;
     background-color: #851944;
@@ -17,3 +17,26 @@ p {
     font-family: 'Crimson Text', serif;
     text-align: justify;
 }
+
+blockquote {
+    background-color: #D9E5E3;
+}
+
+
+aside {
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+}
+
+aside a {
+    text-decoration: none;
+    color: #F2FFFC
+}
+
+aside ul {
+    list-style: none;
+}
+
+
+
+
