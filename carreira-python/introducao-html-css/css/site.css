@@ -1,9 +1,11 @@
+/* INICIO DO CONTEÚDO DA PÁGINA */
+
 body {
     font-family: 'Times New Roman', serif;
     background-color: #f2fffc;
 }
 
-h1, h2 {
+h1, h2, a {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -11,6 +13,11 @@ main h1 {
     text-align: center;
     color: #FFF;
     background-color: #851944;
+}
+
+a {
+    text-decoration: none;
+    color: #851944;
 }
 
 p {
@@ -22,6 +29,10 @@ blockquote {
     background-color: #D9E5E3;
 }
 
+/* FIM DO CONTEÚDO DA PÁGINA */
+
+
+/* INICIO DO TRECHO MENU DE NAVEGAÇÃO */
 
 aside {
     background-color: #3C1D3D;
@@ -29,14 +40,21 @@ aside {
 }
 
 aside a {
-    text-decoration: none;
-    color: #F2FFFC
+    color: inherit;
 }
 
 aside ul {
     list-style: none;
 }
 
+/* FIM DO TRECHO MENU DE NAVEGAÇÃO */
 
 
+/* INICIO DO TRECHO DO RODAPÉ */
 
+footer {
+    background-color: #000000;
+    color: #F2FFFC;
+}
+
+/* FIM DO TRECHO DO RODAPÉ */
