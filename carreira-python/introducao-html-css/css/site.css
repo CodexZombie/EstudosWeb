@@ -40,6 +40,7 @@ em {
     background-color: #851944;
     border-bottom: 10px solid #000000;
     padding: 25px;
+    text-transform: uppercase;
 }
 
 .conteudo-pagina {
@@ -64,6 +65,16 @@ article {
     margin-bottom: 20px;
 }
 
+.leia-mais {
+    padding: 8px;
+    margin: 16px auto;
+    display: block;
+    box-sizing: border-box;
+    
+    font-size: 24px;
+    text-align: center;
+    background-color: #E6E7E8;
+}
 
 /* FIM DO CONTEÚDO DA PÁGINA */
 
@@ -81,6 +92,7 @@ article {
     color: #F2FFFC;
     color: inherit;
     font-family: "Open Sans Condensed", sans-serif;
+    text-transform: lowercase;
 }
 
 .navegacao-site h1 {
@@ -95,6 +107,27 @@ article {
 .icones-sociais li {
     display: inline-block;
 }
+
+.icones-sociais a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-indent: -99999px;
+}
+
+.github {
+    background-image: url(../img/github.png);
+}
+
+.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.linkedin {
+    background-image: url(../img/linkedin.png);
+}
+
+
 
 /* FIM DO TRECHO MENU DE NAVEGAÇÃO */
 
