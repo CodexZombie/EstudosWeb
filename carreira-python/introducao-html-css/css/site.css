@@ -11,36 +11,53 @@ h1, h2 {
     font-family: 'Open Sans Condensed', 'Arial', sans-serif;
 }
 
-main h1 {
-    text-align: center;
-    background-color: #851944;
-    color: #FFF;
-    padding: 25px;
-    border-bottom: 10px solid #000000;
-}
-
-main a {
-    color: #851944;
+h2 {
+    font-size: 30px;
 }
 
 p {
     text-align: justify;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #851944;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
 }
 
 blockquote {
     background-color: #D9E5E3;
     border: 10px solid #C2CCCA;
     width: 250px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    margin: 20px 40px;
 }
 
 main div {
     width: 720px;
     margin: auto;
+    padding: 30px 0;
 }
 
-a {
-    text-decoration: none;
+main h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 60px;
+
+    background-color: #851944;
+    border-bottom: 10px solid #000000;
+    padding: 25px;
+}
+
+main a {
     color: #851944;
 }
 
@@ -57,6 +74,11 @@ aside {
 
 nav a {
     color: #F2FFFC;
+}
+
+aside h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 
 aside a {
