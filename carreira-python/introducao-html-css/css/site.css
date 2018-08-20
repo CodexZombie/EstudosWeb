@@ -1,5 +1,4 @@
 /* INICIO DO CONTEÚDO DA PÁGINA */
-
 body {
     font-family: 'Crimson Text', 'Times New Roman', serif;
     background-color: #f2fffc;
@@ -90,14 +89,19 @@ aside ul {
     list-style: none;
 }
 
+.icones-sociais li {
+    display: inline-block;
+}
+
 /* FIM DO TRECHO MENU DE NAVEGAÇÃO */
 
 
 /* INICIO DO TRECHO DO RODAPÉ */
 
-footer {
-    background-color: #000000;
+#rodape-pagina {
+    background-color: #000;
     color: #F2FFFC;
+    padding: 20px;
 }
 
 /* FIM DO TRECHO DO RODAPÉ */
