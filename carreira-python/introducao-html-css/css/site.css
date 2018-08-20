@@ -60,6 +60,14 @@ main a {
     color: #851944;
 }
 
+/* EFEITO APENAS NO BLOG */
+article {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+
+
 /* FIM DO CONTEÚDO DA PÁGINA */
 
 
