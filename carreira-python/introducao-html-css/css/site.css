@@ -6,12 +6,18 @@ body {
     line-height: 1.5;
 }
 
+main {
+    float: left;
+    width: 85%
+}
+
 h1, h2 {
     font-family: 'Open Sans Condensed', 'Arial', sans-serif;
 }
 
 h2 {
     font-size: 30px;
+    clear: both;
 }
 
 p {
@@ -21,6 +27,9 @@ p {
 
 a {
     text-decoration: none;
+}
+
+main a {
     color: #851944;
 }
 
@@ -55,8 +64,24 @@ em {
     width: 250px;
     box-sizing: border-box;
     margin: 20px 40px;
-    padding: 20px;
 }
+
+.fiat {
+    float: right;
+    margin-right: 0;
+}
+
+.petrobras {
+    float: left;
+    margin-left: 0;
+}
+
+cite {
+    font-style: italic;
+    float: right;
+}
+
+
 
 /* EFEITO APENAS NO BLOG */
 article {
@@ -79,17 +104,22 @@ article {
 /* FIM DO CONTEÚDO DA PÁGINA */
 
 
+.foto-joao, .navegacao-site {
+    float: right;
+    width: 15%;
+    box-sizing: border-box;
+    border-left: 10px solid black;
+    border-left: 10px solid black;
+}
 /* INICIO DO TRECHO MENU DE NAVEGAÇÃO */
 
 .navegacao-site {
     background-color: #3C1D3D;
     color: #F2FFFC;
     text-align: center;
-    padding: 20px;
 }
 
 .navegacao-site a {
-    color: #F2FFFC;
     color: inherit;
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: lowercase;
@@ -111,8 +141,8 @@ article {
 .icones-sociais a {
     width: 40px;
     height: 40px;
-    display: inline-block;
-    text-indent: -99999px;
+    display: block;
+    text-indent: -9999px;
 }
 
 .github {
@@ -127,8 +157,6 @@ article {
     background-image: url(../img/linkedin.png);
 }
 
-
-
 /* FIM DO TRECHO MENU DE NAVEGAÇÃO */
 
 
@@ -137,7 +165,11 @@ article {
 #rodape-pagina {
     background-color: #000;
     color: #F2FFFC;
-    padding: 20px;
+    clear: both;
 }
 
 /* FIM DO TRECHO DO RODAPÉ */
+
+.recomendacao, .navegacao-site, #rodape-pagina {
+    padding: 20;
+}
