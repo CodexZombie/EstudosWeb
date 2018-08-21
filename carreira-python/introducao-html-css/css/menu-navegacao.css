@@ -1,0 +1,53 @@
+.navegacao-site {
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    text-align: center;
+
+    float: right;
+    box-sizing: border-box;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    padding: 20px;
+
+    width: 15%;
+    position: relative;
+    top: 310px;
+}
+
+.navegacao-site a {
+    color: inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: lowercase;
+}
+
+.navegacao-site h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.navegacao-site ul {
+    list-style: none;
+}
+
+.icones-sociais li {
+    display: inline-block;
+}
+
+.icones-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.github {
+    background-image: url(../img/github.png);
+}
+
+.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.linkedin {
+    background-image: url(../img/linkedin.png);
+}
