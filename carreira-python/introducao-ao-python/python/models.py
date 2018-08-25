@@ -23,7 +23,7 @@ class Perfil(object):
     def obter_curtidas(self):
         return self.__curtidas
 
-    @staticamethod
+    @staticmethod
     def gerar_perfis(nome_arquivo):
         perfis = []
         arquivo = open(nome_arquivo, 'r')
