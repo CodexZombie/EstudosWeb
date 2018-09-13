@@ -1,0 +1,32 @@
+<!-- ../perfis/templates/base.html -->
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'styles/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <title>ConnectedIn</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class=""><a href="{% url 'index' %}">Nome</a></li>
+                <li class=""><a href="#">Logout</a></li>
+            </ul>
+            <h3 class="text-muted">ConnectedIn</h3>
+        </div>
+
+        <div class="row content">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
