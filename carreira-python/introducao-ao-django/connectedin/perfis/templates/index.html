@@ -5,6 +5,7 @@
 
 {% block body %}
 <div class="col-lg-12">
+    
     <div class="panel panel-default">
         <div class="panel-heading">
             <strong>Todos os Perfis</strong>
@@ -31,7 +32,7 @@
                 {% for convite in perfil_logado.convites_recebidos.all %}
                 <li class="list-group-item">
                     {{ convite.solicitante.nome }}
-                    <a class="pull-right" href="#">aceitar</a>
+                    <a class="pull-right" href="{% url 'aceitar' convite.id %}">aceitar</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -42,6 +43,26 @@
         {% endif %}
         {% endwith %}
     </div>
+
+    <div class="panel panel-default">
+        {% with total_de_contatos=perfil_logado.contatos.count %}
+        {% if total_de_contatos %}
+        <div class="panel-heading">
+                <strong>Você tem {{ total_de_contatos }} contato{{ total_de_contatos |pluralize }}.</strong>
+            </div>
+            <ul class="list-group">
+                {% for contato in perfil_logado.contatos.all %}
+                    <a class="list-group-item" href="{% url 'exibir' contato.id %}">{{ contato.nome }} / {{ contato.email }}</a>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="panel-body">
+                <p>Você ainda não possui nenhum contato :(</p>
+            </div>
+        {% endif %}
+        {% endwith %}
+    </div>
+
 
 </div>
 {% endblock %}
