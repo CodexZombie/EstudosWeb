@@ -22,12 +22,18 @@ if __name__ == '__main__':
 
     calculador_de_impostos = Calculador_de_impostos()
     
-    print 'ICMS R$'
+    print 'ICMS seguido de ISS:'
     calculador_de_impostos.realiza_calculo(orcamento, ICMS())
-    print 'ISS R$'
     calculador_de_impostos.realiza_calculo(orcamento, ISS())
-    print 'ICPP R$'
+    
+    print '\nICMS com ISS:'
+    ISS_com_ICMS = ISS(ICMS())
+    calculador_de_impostos.realiza_calculo(orcamento, ISS_com_ICMS)
+
+    print '\nICPP seguido de IKCV:'
     calculador_de_impostos.realiza_calculo(orcamento, ICPP())
-    print 'IKCV R$'
     calculador_de_impostos.realiza_calculo(orcamento, IKCV())
+
+    print '\nICPP com IKCV:'
+    calculador_de_impostos.realiza_calculo(orcamento, ICPP(IKCV()))
 
