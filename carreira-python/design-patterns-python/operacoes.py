@@ -21,6 +21,17 @@ class Subtracao(Expressao):
     def avalia(self):
         return (self.__expressao_esquerda.avalia() - self.__expressao_direita.avalia())
 
+    @property
+    def expressao_esquerda(self):
+        return self.__expressao_esquerda
+
+    @property
+    def expressao_direita(self):
+        return self.__expressao_direita
+
+    def aceita(self, visitor):
+        visitor.visita_subtracao(self)
+
 
 class Soma(Expressao):
 
@@ -31,6 +42,18 @@ class Soma(Expressao):
     def avalia(self):
         return (self.__expressao_esquerda.avalia() + self.__expressao_direita.avalia())
 
+    @property
+    def expressao_esquerda(self):
+        return self.__expressao_esquerda
+
+    @property
+    def expressao_direita(self):
+        return self.__expressao_direita
+
+    def aceita(self, visitor):
+        visitor.visita_soma(self)    
+
+
 
 class Numero(Expressao):
 
@@ -40,14 +63,28 @@ class Numero(Expressao):
     def avalia(self):
         return self.__numero
 
+    def aceita(self, visitor):
+        visitor.visita_numero(self)
+
 
 if __name__ == '__main__':
 
+    from impressao import Impressao
+
+    visitor = Impressao()
+    
     expressao_esquerda = Subtracao(Numero(100), Numero(50))
-    print expressao_esquerda.avalia()
+    print 'Expressao esquerda = ',
+    expressao_esquerda.aceita(visitor)
+    print ''
 
     expressao_direita = Soma(Numero(20), Numero(30))
-    print expressao_direita.avalia()
+    print 'Expressao direita = ',
+    expressao_direita.aceita(visitor)
+    print ''
 
     expressao_conta = Soma(expressao_esquerda, expressao_direita)
-    print expressao_conta.avalia()
+    print ''
+
+    expressao_conta.aceita(visitor),
+    print '= %s' % (expressao_conta.avalia())
