@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # DSL e Interpreter
-#../design-patterns-python/contrato.py
+#../design-patterns-python/operacoes.py
 
 from abc import abstractmethod, ABCMeta
 
