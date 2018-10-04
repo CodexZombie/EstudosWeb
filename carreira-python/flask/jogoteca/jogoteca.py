@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -28,11 +28,31 @@ jogo3 = Jogo('Pokemon Silver', 'RPG', 'Game Boy')
 lista = [jogo1, jogo2, jogo3]
 
 
-@app.route('/inicio')
-def ola():
+@app.route('/')
+def index():
     return render_template('lista.html',
                            titulo='Jogos',
                            jogos=lista)
 
 
-app.run()
+@app.route('/novo')
+def novo():
+    return render_template('novo.html',
+                           titulo='Novo Jogo')
+
+
+@app.route('/criar', methods=['POST',])
+def criar():
+    nome = request. form['nome']
+    categoria = request. form['categoria']
+    plataforma = request. form['console']
+
+    jogo = Jogo(nome, categoria, plataforma)
+    lista.append(jogo)
+
+    return render_template('lista.html',
+                           titulo='Jogo',
+                           jogos=lista)
+
+
+app.run(debug=True)
