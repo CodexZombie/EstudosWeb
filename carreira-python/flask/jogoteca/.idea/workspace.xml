@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d7e2c1dd-0e44-44a5-9442-5824f47d1006" name="Default Changelist" comment="Conteúdo dinâminco">
       <change beforePath="$PROJECT_DIR$/jogoteca.py" beforeDir="false" afterPath="$PROJECT_DIR$/jogoteca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/novo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/novo.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,16 +38,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="692" />
-          <entry key="py" value="1512" />
+          <entry key="html" value="821" />
+          <entry key="py" value="2344" />
           <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="692" />
+          <entry key="HTML" value="821" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="1512" />
+          <entry key="Python" value="2344" />
         </counts>
       </usages-collector>
     </session>
@@ -56,12 +57,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jogoteca.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="259">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
               <folding>
-                <marker date="1539044190479" expanded="true" signature="139:689" ph="..." />
-                <marker date="1539044190479" expanded="true" signature="1017:1796" ph="..." />
-                <marker date="1539044190479" expanded="true" signature="1695:1796" ph="..." />
+                <marker date="1539049354147" expanded="true" signature="148:1297" ph="..." />
+                <marker date="1539049354147" expanded="true" signature="529:1114" ph="..." />
+                <marker date="1539049354147" expanded="true" signature="1689:2718" ph="..." />
+                <marker date="1539049354147" expanded="true" signature="2604:2718" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="391">
+              <caret line="23" column="86" lean-forward="true" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -89,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/templates/novo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -124,11 +126,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/novo.html" />
         <option value="$PROJECT_DIR$/templates/lista.html" />
         <option value="$PROJECT_DIR$/templates/login].html" />
         <option value="$PROJECT_DIR$/templates/template.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/novo.html" />
         <option value="$PROJECT_DIR$/jogoteca.py" />
       </list>
     </option>
@@ -278,13 +280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/novo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -292,21 +287,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/novo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="391">
+          <caret line="23" column="86" lean-forward="true" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jogoteca.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="259">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
           <folding>
-            <marker date="1539044190479" expanded="true" signature="139:689" ph="..." />
-            <marker date="1539044190479" expanded="true" signature="1017:1796" ph="..." />
-            <marker date="1539044190479" expanded="true" signature="1695:1796" ph="..." />
+            <marker date="1539049354147" expanded="true" signature="148:1297" ph="..." />
+            <marker date="1539049354147" expanded="true" signature="529:1114" ph="..." />
+            <marker date="1539049354147" expanded="true" signature="1689:2718" ph="..." />
+            <marker date="1539049354147" expanded="true" signature="2604:2718" ph="..." />
           </folding>
         </state>
       </provider>
