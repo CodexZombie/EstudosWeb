@@ -1,64 +1,27 @@
+# -*- coding: UTF-8 -*-
 from flask import Flask, render_template, request, redirect, session, flash, url_for
+from flask_mysqldb import MySQL
+from dao import JogoDao, UsuarioDao
+from models import Jogo, Usuario
 
 app = Flask(__name__)
 app.secret_key = 'jogoteca'
 
-class Jogo:
-    def __init__(self, nome, categoria, plataforma):
-        self.__nome = nome
-        self.__categoria = categoria
-        self.__plataforma = plataforma
+app.config['MYSQL_HOST'] = "localhost"
+app.config['MYSQL_USER'] = "root"
+app.config['MYSQL_PASSWORD'] = ""
+app.config['MYSQL_DB'] = "jogoteca"
+app.config['MYSQL_PORT'] = 3306
+app.config['MYSQL_CHARSET'] = 'utf8'
 
-    @property
-    def nome(self):
-        return self.__nome
-
-    @property
-    def categoria(self):
-        return self.__categoria
-
-    @property
-    def plataforma(self):
-        return self.__plataforma
-
-
-class Usuario:
-    def __init__(self, id, nome, senha):
-        self.__id = id
-        self.__nome = nome
-        self.__senha = senha
-
-    @property
-    def id(self):
-        return self.__id
-
-    @property
-    def nome(self):
-        return self.__nome
-
-    @property
-    def senha(self):
-        return self.__senha
-
-
-usuario1 = Usuario('luan', 'Luiz Antonio Marques', '1234')
-usuario2 = Usuario('Nico', 'Nico Steppat', '7a1')
-usuario3 = Usuario('flavio', 'flavio Almeida', 'javascript')
-
-usuarios = {usuario1.id: usuario1,
-            usuario2.id: usuario2,
-            usuario3.id: usuario3}
-
-
-jogo1 = Jogo('Tetris', 'Puzzle', 'Atari')
-jogo2 = Jogo('Super Mario', 'Aventura', 'Super Nintendo')
-jogo3 = Jogo('Pokemon Silver', 'RPG', 'Game Boy')
-
-lista = [jogo1, jogo2, jogo3]
+db = MySQL(app)
+jogo_dao = JogoDao(db)
+usuario_dao = UsuarioDao(db)
 
 
 @app.route('/')
 def index():
+    lista = jogo_dao.listar()
     return render_template('lista.html', titulo='Jogos', jogos=lista)
 
 
@@ -71,13 +34,40 @@ def novo():
 
 @app.route('/criar', methods=['POST', ])
 def criar():
-    nome = request. form['nome']
-    categoria = request. form['categoria']
-    plataforma = request. form['console']
+    nome = request.form['nome']
+    categoria = request.form['categoria']
+    console = request.form['console']
 
-    jogo = Jogo(nome, categoria, plataforma)
-    lista.append(jogo)
+    jogo = Jogo(nome, categoria, console)
+    jogo_dao.salvar(jogo)
 
+    return redirect(url_for('index'))
+
+
+@app.route('/editar/<int:id>')
+def editar(id):
+    if 'usuario_logado' not in session or session['usuario_logado'] == None:
+        return redirect(url_for('login', proxima=url_for('editar')))
+    jogo = jogo_dao.busca_por_id(id)
+    return render_template('editar.html', titulo='Editando Jogo', jogo=jogo)
+
+
+@app.route('/atualizar', methods=['POST', ])
+def atualizar():
+    nome = request.form['nome']
+    categoria = request.form['categoria']
+    console = request.form['console']
+
+    jogo = Jogo(nome, categoria, console, id=request.form['id'])
+    jogo_dao.salvar(jogo)
+
+    return redirect(url_for('index'))
+
+
+@app.route('/deletar/<int:id>')
+def deletar(id):
+    jogo_dao.deletar(id)
+    flash('O jogo foi removido com sucesso!')
     return redirect(url_for('index'))
 
 
@@ -89,8 +79,8 @@ def login():
 
 @app.route('/autenticar', methods=['POST', ])
 def autenticar():
-    if request.form['usuario'] in usuarios:
-        usuario = usuarios[request.form['usuario']]
+    usuario = usuario_dao.buscar_por_id(request.form['usuario'])
+    if usuario:
         if usuario.senha == request.form['senha']:
             session['usuario_logado'] = usuario.id
             flash(usuario.nome + ' logou com sucesso!')
