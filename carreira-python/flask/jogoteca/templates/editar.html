@@ -4,6 +4,14 @@
 <form action="{{ url_for('atualizar') }}" method="post">
     <input type="hidden" name="id" value="{{ jogo.id }}">
     <fieldset>
+        <figure>
+            <img src="{{ url_for('imagem', nome_arquivo=capa_jogo) }}">
+            <figcaption>
+                <label>
+                    <input type="file" name="arquivo" accept=".jpg">
+                </label>
+            </figcaption>
+        </figure>
         <div class="form-group">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" class="form-control" value="{{ jogo.nome }}">
