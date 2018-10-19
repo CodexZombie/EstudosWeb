@@ -1,6 +1,6 @@
 # EstudosWeb
 
-<h1>Pasta de estudos gerais para acompanhamento de cusros e exercicios</h1>
+<h2>Pasta de estudos gerais para acompanhamento de cusros e exercicios</h1>
 
 <h2>carreira-python</h2>
 
@@ -24,7 +24,7 @@
 	<li>Flask</li>
 </ul>
 
-<h2>curso-de-front-end-com-boas-praticas<h2>
+<h2>curso-de-front-end-com-boas-praticas</h2>
 <p>Acompanhamento das lives de front-end do MarcoBrunoBR</p>
 <ul>
 	<li><a href="https://github.com/MarcoBrunoBR">GitHub</a></li>
