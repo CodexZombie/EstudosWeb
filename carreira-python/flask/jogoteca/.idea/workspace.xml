@@ -57,7 +57,7 @@
           <entry key="Python Console" value="116" />
           <entry key="css" value="135" />
           <entry key="html" value="1953" />
-          <entry key="md" value="45" />
+          <entry key="md" value="147" />
           <entry key="py" value="4535" />
           <entry key="txt" value="19" />
         </counts>
@@ -66,7 +66,7 @@
         <counts>
           <entry key="CSS" value="135" />
           <entry key="HTML" value="1953" />
-          <entry key="Markdown" value="45" />
+          <entry key="Markdown" value="147" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Python" value="4651" />
         </counts>
@@ -79,8 +79,8 @@
         <entry file="file://$PROJECT_DIR$/../../../README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="153">
-                <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <first_editor relative-caret-position="105">
+                <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               </first_editor>
               <second_editor />
             </state>
@@ -427,8 +427,8 @@
     <entry file="file://$PROJECT_DIR$/../../../README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <first_editor relative-caret-position="105">
+            <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           </first_editor>
           <second_editor />
         </state>

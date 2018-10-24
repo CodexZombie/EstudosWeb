@@ -1,6 +1,6 @@
 # EstudosWeb
 
-<h2>Pasta de estudos gerais para acompanhamento de cusros e exercicios</h1>
+<h2>Repositório destinado a exercicios e acompanhamento de cusros em desenvolvimento web</h1>
 
 <h2>carreira-python</h2>
 
@@ -23,6 +23,15 @@
 	<li>Protocolos HTTP</li>
 	<li>Flask</li>
 </ul>
+
+<p>Ambiente:</p>
+<p>
+Python 3.7<br>
+MySQL 5.7<br>
+Flask 0.12.2<br>
+mysqlclient<br>
+flask_mysqldb 0.2.0
+</p>
 
 <h2>curso-de-front-end-com-boas-praticas</h2>
 <p>Acompanhamento das lives de front-end do MarcoBrunoBR</p>
