@@ -33,6 +33,8 @@ mysqlclient<br>
 flask_mysqldb 0.2.0
 </p>
 
+<hr>
+
 <h2>curso-de-front-end-com-boas-praticas</h2>
 <p>Acompanhamento das lives de front-end do MarcoBrunoBR</p>
 <ul>
@@ -40,8 +42,23 @@ flask_mysqldb 0.2.0
 	<li><a href="https://www.youtube.com/channel/UCVheRLgrk7bOAByaQ0IVolg">YouTube</a></li>
 	<li><a href="https://www.twitch.tv/marcobrunobr">TwitchTV</a></li>
 </ul>
-<br>
-<br>
+
+<hr>
+
+<h2>Lógica</h2>
+<p>Acompanhamento das aulas da Alura nos cursos:</p>
+<ul>
+	<li>Curso Lógica de programação I: Os primeiros programas com Javascript e HTML</li>
+	<li>Curso Lógica de programação II: pratique com desenhos, animações e um jogo</li>
+</ul>
+<p>Ambiente:</p>
+<p>
+Visual Studio Code 1.28<br>
+Google Chrome 69
+</p>
+
+<hr>
+
 <h1>links úteis</h1>
 <p>Sobre RSCSS:
     <a href="https://willianjusten.com.br/falando-sobre-rscss">
