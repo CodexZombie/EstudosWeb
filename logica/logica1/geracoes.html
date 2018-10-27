@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+	var ano = 2018
+	var passados = ano-1500;
+	var geracoes = passados/28;
+	var intro = "Em média, um casal tem filhos quando atinge a idade de 28 anos."
+	intro = intro + " Seguindo essa média, se os portugueses chegaram em 1500 no Brasil,"
+	intro = intro + " então, a primeira geração de brasileiros surgiu em 1528,"
+	intro = intro + " a segunda em 1556 e assim por diante."
+	
+	function pulaLinha(){
+		document.write("<br><br>");
+	}
+	
+	function mostra(){
+		document.write(intro);
+		pulaLinha();
+		document.write("De 1500 até hoje, se passaram " + passados + " anos.");
+		pulaLinha();
+		document.write("Então, desde 1500 até hoje, se passaram " + geracoes + " gerações.");
+	}
+	
+	mostra();
+	
+</script>
