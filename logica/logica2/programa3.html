@@ -1,0 +1,46 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var c = 0; // VAR AUX PARA A FUNC. mudaCor()
+    var cores = ['blue', 'red', 'green'];
+    
+    // MUDA A COR DA BOLINHA NA ORDEM AZUL, VERMELHO E VERDE
+    function mudaCor(){
+        c++;
+        if(c >= cores.length){
+            c = 0;
+        }
+        return false;
+    }
+
+    var raio = 10;
+
+    function desenhaCirculo(evento){
+        console.log(evento);
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+        
+        //SEGURANDO O SHIFT A BOLINHA CRESCE DE 10 EM 10 ATÉ O MÁX 40 
+        if(raio <= 40 && evento.shiftKey){ 
+            raio += 10;
+        //SEGURANDO ALT A BOLINHA DIMINUI DE 5 EM 5 ATÉ O MÍN DE 10
+        } else if (raio > 10 && evento.altKey){
+                raio -= 5;
+        }
+        
+        pincel.fillStyle = cores[c];
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * 3.14);
+        pincel.fill();
+    }
+
+    tela.oncontextmenu = mudaCor;
+    tela.onclick = desenhaCirculo;
+
+</script>

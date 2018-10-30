@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<canvas width="600" height="400">
+</canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    function desenhaQuadrado(x, y, tamanho, cor){
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, tamanho, tamanho);
+        pincel.strokeRect(x, y, tamanho, tamanho);
+
+    }
+
+    var termo1 = parseInt(prompt("Digite o primeiro termo da fração"));
+    var termo2 = parseInt(prompt("Digite o segundo termo da fração"));
+
+    while(termo2 < termo1){
+        alert("O segundo termo deve ser maior ou igual ao primeiro!");
+        termo2 = parseInt(prompt("Digite o segundo termo da fração"));
+    }
+
+
+    for(var x = 0; x < (termo1*50); x += 50){
+        desenhaQuadrado(x, 0, 50, 'darkgreen');
+    }
+
+    for(var x = (termo1 * 50); x < (termo2*50); x += 50){
+        desenhaQuadrado(x, 0, 50, 'white');
+    }
+   
+
+</script>
