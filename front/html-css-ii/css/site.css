@@ -22,6 +22,7 @@ h1 {
     color: #FFF;
     padding: 2rem;
     border-bottom: .5rem solid #000;
+    position: relative;
 }
 
 .subtitulo-texto {
