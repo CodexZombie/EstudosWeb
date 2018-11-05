@@ -1,0 +1,32 @@
+.container {
+    position: absolute;
+    left: 100px;
+    margin-bottom: 100px;
+}
+.container div {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 0 .3em #000;
+    margin-top: 100px;
+}
+
+.gradient1 {
+    background-image: linear-gradient(to bottom right, #fff, #f00, #000);
+}
+
+.gradient2 {
+    background-image: linear-gradient(to right, white, black, white, black, white);
+}
+
+.gradient3 {
+    background-image: linear-gradient(to bottom, black, blue 80%, brown);
+}
+
+.gradient4 {
+    background-color: #000;
+
+    background-image: linear-gradient(to right, black, #c00, black);
+    background-size: 80% 5px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
