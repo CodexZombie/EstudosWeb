@@ -8,7 +8,13 @@
 }
 
 .post-blog {
+    
+    background-image: linear-gradient(to right, #F2FFFC, #ccc, #F2FFFC);
+    background-size: 80% 1px;
+    background-position: 50% 98%;
+    background-repeat: no-repeat;
+
     padding-bottom: 1.5em;
-    border-bottom: 1px solid #ccc;
     margin-bottom: 1em;
 }
+
