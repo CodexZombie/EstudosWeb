@@ -14,6 +14,7 @@ h2,
 h1 {
     text-transform: uppercase;
     font-size: 3em;
+    text-shadow: 5px 5px #000;
 }
 
 .titulo-principal {
@@ -58,7 +59,7 @@ main p {
 }
 
 .rodape-pagina {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #F2FFFC;
     padding: 1em;
     clear: both;

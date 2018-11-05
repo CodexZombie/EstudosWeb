@@ -1,0 +1,9 @@
+.box {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    height: 100px;
+
+    box-shadow: 0 0 0 4px #000, 0 0 0 8px #fff, 0 0 0 12px #000, 0 0 0 16px #fff, 0 0 0 20px #000 ;
+}
