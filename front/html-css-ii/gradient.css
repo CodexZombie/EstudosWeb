@@ -24,9 +24,25 @@
 
 .gradient4 {
     background-color: #000;
-
     background-image: linear-gradient(to right, black, #c00, black);
     background-size: 80% 5px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+.gradient5 {
+    background-image: radial-gradient(yellow, red);
+}
+
+.gradient6 {
+    background-image: radial-gradient(circle at bottom left, yellow, red);
+}
+
+.gradient7 {
+    background-image: radial-gradient(circle at bottom right,
+                                        yellow,
+                                        yellow 20%,
+                                        black 20%,
+                                        black 30%,
+                                        yellow 30%);
 }
