@@ -45,6 +45,14 @@ flask_mysqldb 0.2.0
 
 <hr>
 
+<h2>Front</h2>
+<p>Acompanhamento das aulas da Alura nos cursos da Formação 'Engenheiro Front-end':</p>
+<ul>
+	<li>HTML & CSS</li>
+</ul>
+
+<hr>
+
 <h2>Lógica</h2>
 <p>Acompanhamento das aulas da Alura nos cursos:</p>
 <ul>
