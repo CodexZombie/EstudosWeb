@@ -35,6 +35,18 @@ main a {
     color: #851944;
 }
 
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus {
+    color: red;
+}
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    text-shadow: 0 0 2px pink;
+}
+
 main p {
     text-align: justify;
     margin: 1em 0;
