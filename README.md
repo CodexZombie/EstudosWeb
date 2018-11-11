@@ -35,21 +35,22 @@ flask_mysqldb 0.2.0
 
 <hr>
 
-<h2>curso-de-front-end-com-boas-praticas</h2>
-<p>Acompanhamento das lives de front-end do MarcoBrunoBR</p>
-<ul>
-	<li><a href="https://github.com/MarcoBrunoBR">GitHub</a></li>
-	<li><a href="https://www.youtube.com/channel/UCVheRLgrk7bOAByaQ0IVolg">YouTube</a></li>
-	<li><a href="https://www.twitch.tv/marcobrunobr">TwitchTV</a></li>
-</ul>
-
-<hr>
-
 <h2>Front</h2>
-<p>Acompanhamento das aulas da Alura nos cursos da Formação 'Engenheiro Front-end':</p>
-<ul>
-	<li>HTML & CSS</li>
-</ul>
+<p>Pastas de Estudos e exercícios em Front-end:</p>
+<dl>
+	<dt>Alura</dt>
+	<dd>Acompanhamento das aulas da Alura nos cursos da Formação 'Engenheiro Front-end'</dd>
+	<ul>
+		<li>HTML e CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	<dt>CollabCode</dt>
+	<dd>Acompanhamento de cursos e/ou materiais do Marco Bruno/CollabCode</dd>
+	<ul>
+		<li>Curso de front end com boas práticas</li>
+		<li>Série Pare de Chutar (CSS)</li>
+	</ul>
+</dl>
 
 <hr>
 
