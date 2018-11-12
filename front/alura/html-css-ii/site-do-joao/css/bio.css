@@ -42,8 +42,13 @@
     transform: rotate(-5deg) scale(1.2);
 }
 
-blockquote::before {
+.citacao-bio::before {
     content: '"';
     font-size: 10em;
+    color: #bbb;
     position: absolute;
+}
+
+.citacao-bio > p {
+    position: relative;
 }
