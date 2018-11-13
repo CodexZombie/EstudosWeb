@@ -7,6 +7,18 @@
     line-height: 1;
 }
 
+.citacao-bio::before {
+    content: '"';
+    font-size: 10em;
+    color: #bbb;
+    position: absolute;
+    line-height: 0.8;
+}
+
+.citacao-bio > p {
+    position: relative;
+}
+
 .citacao-bio {
     background-color: #D9E5E3;
     border: .5em solid #C2CCCA;
@@ -15,7 +27,6 @@
     width: 30ch;
     box-sizing: border-box;
 }
-
 
 .citacao-bio:nth-of-type(odd) {
     float: right;
@@ -40,15 +51,4 @@
 .citacao-bio:nth-of-type(even):focus,
 .citacao-bio:nth-of-type(even):hover {
     transform: rotate(-5deg) scale(1.2);
-}
-
-.citacao-bio::before {
-    content: '"';
-    font-size: 10em;
-    color: #bbb;
-    position: absolute;
-}
-
-.citacao-bio > p {
-    position: relative;
 }
