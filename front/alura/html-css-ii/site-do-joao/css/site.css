@@ -151,6 +151,18 @@ main {
     font-size: .75em;
 }
 
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+}
+
 .icones-redes-sociais li {
     display: inline-block;
 }

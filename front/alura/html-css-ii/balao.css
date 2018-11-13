@@ -1,0 +1,27 @@
+main {
+    position: relative;
+}
+
+.balao {
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: lightgray;
+    position: absolute;
+
+}
+
+p {
+    text-align: center;
+}
+
+.balao::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    transform: translateY(10px) rotate(45deg)
+}
