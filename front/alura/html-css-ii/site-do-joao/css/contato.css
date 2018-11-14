@@ -55,3 +55,11 @@ label[for="outro"] {
 input[name="outro-assunto"] {
     width: auto;
 }
+
+input[value="Outro"] ~ input {
+    display: none;
+}
+
+input[value="Outro"]:checked ~ input {
+    display: inline;
+}
