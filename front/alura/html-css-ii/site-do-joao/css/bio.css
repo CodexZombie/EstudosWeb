@@ -101,6 +101,7 @@ h1 {
     box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
+    transition-delay: 1s, 0s;
 }
 
 .citacao-bio:nth-of-type(odd):focus,

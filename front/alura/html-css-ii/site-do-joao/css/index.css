@@ -1,3 +1,33 @@
+@keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@-webkit-keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
 .foto-home {
     height: 200px;
     border-radius: 50%;
@@ -48,7 +78,6 @@
     box-shadow: 0 0 1em #FA9;
     background-color: #C54974;
 }
-
 
 .secao-inicio {
     padding: 2em;
@@ -158,7 +187,11 @@ body {
     font-size: 400%;
     color: rgba(255, 127, 127, 0.5);
     position: absolute;
+
+    -webkit-animation: aparece 2s;
+    animation: aparece 2s;
 }
+
 .eficiencia {
     top: 50%;
     left: 60%;
@@ -270,6 +303,12 @@ body {
 
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
+    -webkit-animation: aparece .5s;
+    animation: aparece .5s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
 }
 
 .blog .inicio-post {
@@ -299,3 +338,18 @@ body {
     display: block;
 }
 
+.saudacao em {
+    -webkit-animation: flutua 1s;
+    animation: flutua 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+.saudacao:hover em,
+.saudacao:focus em {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
