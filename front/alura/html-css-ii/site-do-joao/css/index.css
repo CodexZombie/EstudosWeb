@@ -39,7 +39,17 @@
     display: block;
     text-align: center;
     box-shadow: 0 0 1em #000, inset 0 0 .5em #fff;
+    text-decoration: none;
+    transition: 0.5s;
 }
+
+.botao-index:focus,
+.botao-index:hover {
+    box-shadow: 0 0 1em #FA9;
+    background-color: #C54974;
+}
+
+
 .secao-inicio {
     padding: 2em;
 }
@@ -243,8 +253,8 @@ body {
     /* altura = 3.5em */
     /* tx = .707 * h - .707 * w + w */
     /* ty = -.707 * h */
-    -webkit-transform: translate(calc(.707 * (3.5em - 100%) +100%), calc(-.707 * 3.5em)) rotate(45deg);
-            transform: translate(calc(.707 * (3.5em - 100%) +100%), calc(-.707 * 3.5em)) rotate(45deg);
+    -webkit-transform: translate(calc(0.707 * (3.5em - 100%) + 100%), calc(-0.707 * 3.5em)) rotate(45deg);
+            transform: translate(calc(0.707 * (3.5em - 100%) + 100%), calc(-0.707 * 3.5em)) rotate(45deg);
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
 
@@ -261,6 +271,7 @@ body {
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
 }
+
 .blog .inicio-post {
     position: absolute;
     top: 4.8em;
