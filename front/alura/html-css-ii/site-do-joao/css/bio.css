@@ -52,3 +52,36 @@
 .citacao-bio:nth-of-type(even):hover {
     transform: rotate(-5deg) scale(1.2);
 }
+
+.habilidades {
+    margin: 1em 0;
+}
+
+.habilidades th {
+    font-weight: bold;
+    background-color: #851944;
+    color: #FFF;
+}
+
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+
+.habilidades th,
+.habilidades td {
+    padding: 1em;
+}
+
+.habilidades {
+    border-collapse: separate;
+    border-spacing: 0.25em;
+}
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+
+.habilidades [rowspan] {
+    vertical-align: middle;
+}
