@@ -1,3 +1,27 @@
+h1 {
+    -webkit-animation: aparece 2s;
+    animation: aparece 2s;
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 .container > p::first-letter {
     font-size: 200%;
     font-weight: bold;
@@ -26,6 +50,45 @@
     margin: 1em 2em;
     width: 30ch;
     box-sizing: border-box;
+    transition: transform 1s linear, box-shadow 2s ease-in;
+    transition-delay: 0s, 1s;
+    position: relative;
+    -webkit-animation: quica 1s infinite;
+    animation: quica 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+
+@keyframes quica {
+    from {
+        top: 0;
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+    95% {
+        transform: rotate(2deg);
+    }
+    to {
+        top: 1em;
+    }
+}
+
+@-webkit-keyframes quica {
+    from {
+        top: 0;
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+    95% {
+        transform: rotate(2deg);
+    }
+    to {
+        top: 1em;
+    }
 }
 
 .citacao-bio:nth-of-type(odd) {
@@ -36,6 +99,8 @@
 .citacao-bio:focus,
 .citacao-bio:hover {
     box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .citacao-bio:nth-of-type(odd):focus,
