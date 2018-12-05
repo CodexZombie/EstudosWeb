@@ -107,13 +107,13 @@
     color: #FFF;
 }
 .trabalhos ul {
-    overflow: hidden;
+    display: flex;
     border: .5em solid black;
 }
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    flex: 1;
 }
+
 .trabalhos img {
     width: 100%;
     display: block;
