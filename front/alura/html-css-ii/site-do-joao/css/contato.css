@@ -25,7 +25,7 @@ button {
     padding: .5em 1em;
     font-family: "Open Sans Condensed", sans-serif;
     background-color: #3C1D3D;
-    color: white;
+    color: #FFF;
     font-size: 1.2em;
     margin-left: auto;
     margin-top: 1em;
@@ -44,28 +44,17 @@ button:focus {
     background-color: #8C1D3D;
 }
 
-fieldset > fieldset {
-    display: inline;
-}
-
-label[for="outro"] {
-    display: inline;
-}
-
-input[name="outro-assunto"] {
-    width: auto;
-}
-
-input[value="Outro"] ~ input {
+input[value="Outro"] + input {
     display: none;
 }
 
-input[value="Outro"]:checked ~ input {
-    display: inline;
+input[value="Outro"]:checked + input {
+    display: block;
 }
 
 .com-icone {
     position: relative;
+    margin-bottom: 0;
 }
 
 .com-icone::after {
@@ -77,8 +66,15 @@ input[value="Outro"]:checked ~ input {
     height: 2em;
     background-color: #8C1D3D;
     background-size: 50% 50%;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+}
+
+.com-icone + input {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+    margin-top: 0;
 }
 
 .com-icone[for="nome"]::after {
@@ -87,11 +83,4 @@ input[value="Outro"]:checked ~ input {
 
 .com-icone[for="email"]::after {
     background-image: url(../imagens/email.png);
-}
-
-.com-icone + input {
-    width: calc(100% - 2em);
-    position: relative;
-    left: 2em;
-    margin-top: 0;
 }

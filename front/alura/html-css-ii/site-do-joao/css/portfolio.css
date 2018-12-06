@@ -5,9 +5,8 @@
 
 .portfolio li {
     flex: 1 1 45%;
-    border: .5em solid black;
+    border: .5em solid #000;
     background-color: #FAFFFC;
-    width: 45%;
     box-sizing: border-box;
     padding: 1em;
     margin-right: 1em;
@@ -20,6 +19,6 @@
 
 .portfolio img {
     width: 100%;
-    box-shadow: 0 0 1em #000; 
+    box-shadow: 0 0 4px #000; 
 }
 

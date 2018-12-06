@@ -3,6 +3,20 @@ body {
     background-color: #F2FFFC;
     font-size: 120%;
     line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1,
+h2,
+.subtitulo-principal {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 3px 3px #000;
 }
 
 .titulo-principal {
@@ -11,19 +25,6 @@ body {
     color: #FFF;
     padding: 2rem;
     border-bottom: .5rem solid #000;
-    position: relative;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-size: 3em;
-    text-shadow: 5px 5px #000;
-}
-
-h1,
-h2,
-.subtitulo-principal {
-    font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
 
 .subtitulo-texto {
@@ -47,6 +48,31 @@ main p {
     margin: 1em 0;
 }
 
+.navegacao-site {
+    text-align: center;
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    padding: 1em;
+    width: calc(0.9 * 300px);
+    padding-top: calc(300px + 1em);
+}
+
+.navegacao-site a {
+    color: inherit;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-transform: lowercase;
+}
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    text-shadow: 0 0 2px pink;
+}
+
+.navegacao-site h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
 .rodape-pagina {
     color: #F2FFFC;
     padding: 1em;
@@ -56,14 +82,15 @@ main p {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-
-    background-image: radial-gradient(ellipse at bottom left, rgba(60, 29, 61, 0.8),
-                                                             rgba(60, 29, 61, 0.8) 65%,
-                                                             black 65%,
-                                                             black 70%,
-                                                             transparent 70%);
+    background-image: radial-gradient(ellipse at left bottom,
+        rgba(60, 29, 61, 0.8),
+        rgba(60, 29, 61, 0.8) 65%,
+        #000 65%,
+        #000 70%,
+        transparent 70%);
     background-size: 25% 100%;
     background-repeat: no-repeat;
+    text-shadow: 1px 1px #000;
 }
 
 .container {
@@ -81,54 +108,8 @@ em {
     font-style: italic;
 }
 
-main {
-    width: calc(100% - 0.9 * 300px);
-    float: left;
-    padding-bottom: 4em;
-}
-
-
-
-.minha-foto {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 300px;
-}
-
-.minha-foto,
-.navegacao-site {
-    border-left: .5em solid black;
-    border-bottom: .5em solid black;
-    box-sizing: border-box;
-}
-
-.navegacao-site a:hover,
-.navegacao-site a:focus {
-    text-shadow: 0 0 2px pink;
-}
-
-
-.navegacao-site {
-    width: calc(0.9 * 300px);
-    float: right;
-    position: relative;
-    top: 300px;
-    text-align: center;
-    background-color: #3C1D3D;
-    color: #F2FFFC;
-    padding: 1em;
-}
-
-.navegacao-site a {
-    color: inherit;
-    font-family: "Open Sans Condensed", "Arial", sans-serif;
-    text-transform: lowercase;
-}
-
-.navegacao-site h1 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+.icones-redes-sociais li {
+    display: inline-block;
 }
 
 .icones-redes-sociais a {
@@ -137,34 +118,6 @@ main {
     display: block;
     text-indent: -99999px;
     position: relative;
-}
-
-.icones-redes-sociais a:hover::after,
-.icones-redes-sociais a:focus::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    text-indent: 0;
-    width: 300%;
-    background-color: #000;
-    font-size: .75em;
-}
-
-.icones-redes-sociais a:hover::before,
-.icones-redes-sociais a:focus::before {
-    content: '';
-    width: 1em;
-    height: 1em;
-    background-color: #000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(.5em) rotate(45deg);
-}
-
-.icones-redes-sociais li {
-    display: inline-block;
 }
 
 .github {
@@ -177,4 +130,48 @@ main {
 
 .linkedin {
     background-image: url(../imagens/linkedin.png);
+}
+
+main {
+    padding-bottom: 4em;
+    flex-grow: 1;
+}
+
+.minha-foto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 300px;
+    border-bottom: .5em solid #000;
+}
+
+.minha-foto,
+.navegacao-site {
+    border-left: .5em solid #000;
+    box-sizing: border-box;
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background-color: #000;
+    font-size: .75em;
+    color: #FFF;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
 }

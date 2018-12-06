@@ -8,13 +8,13 @@
 }
 
 .post-blog + .post-blog {
-    
-    background-image: linear-gradient(to right, #F2FFFC, #ccc, #F2FFFC);
-    background-size: 80% 1px;
+    background-image: linear-gradient(to right,
+                                    rgba(200, 200, 200, 0),
+                                    rgba(200, 200, 200, 1),
+                                    rgba(200, 200, 200, 0));
+    background-size: 100% 1px;
     background-position: top center;
     background-repeat: no-repeat;
-
-    padding-top: 1.5em;
-    margin-top: 1em;
+    padding-top: 1em;
+    margin-top: 1.5em;
 }
-
