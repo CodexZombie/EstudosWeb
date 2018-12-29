@@ -26,7 +26,7 @@ botaoAdicionar.addEventListener("click", function(event){
 })
 
 function exibeMensagensDeErro(erros){
-    
+
     var ul = document.querySelector("#mensagens-erro");
     ul.innerHTML = "";
 
@@ -36,7 +36,6 @@ function exibeMensagensDeErro(erros){
         ul.appendChild(li);
     });
 }
-
 
 function obtemPacienteDoForm(form){
 
