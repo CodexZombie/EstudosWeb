@@ -43,6 +43,7 @@ flask_mysqldb 0.2.0
 	<ul>
 		<li>HTML e CSS</li>
 		<li>JavaScript</li>
+		<li>jQuery</li>
 	</ul>
 	<dt>CollabCode</dt>
 	<dd>Acompanhamento de cursos e/ou materiais do Marco Bruno/CollabCode</dd>
