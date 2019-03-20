@@ -1,6 +1,6 @@
 # EstudosWeb
 
-<h2>Repositório destinado a exercicios e acompanhamento de cusros em desenvolvimento web</h1>
+<h2>Repositório destinado a exercicios e acompanhamento de cursos em desenvolvimento web</h1>
 
 <h2>carreira-python</h2>
 
